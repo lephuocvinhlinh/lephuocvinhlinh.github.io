@@ -43,11 +43,11 @@
     }
     .project-card .card-content .title
     {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .project-card .card-content .info 
     {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
 }
