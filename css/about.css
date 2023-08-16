@@ -1,0 +1,624 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: 'futura';
+    src: url(../font/Futura_Medium/Futura_Medium.otf)
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'futura';
+    height: auto;
+ }
+
+
+/* .container .img-flex
+{
+    position: fixed;
+} */
+
+.max-width
+{
+    max-width: 1300px;
+    padding: 0 80px;
+}
+
+.container
+{
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden ;
+    scroll-behavior: smooth;
+    z-index: 999;
+}
+
+.container .back-btn
+{
+    position: fixed;
+    left: 3%;
+    top: 10%;
+    z-index: 10000;
+}
+.container .back-btn a
+{
+    color: #0F2027;
+    font-size: 40px;
+}
+
+.container .top-page
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .top-page .img-top
+{
+    background-image: url(../img/linhlpv_about.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    /* left: 0;
+    top: 0; */
+    /* width: 60%;
+    height: 50%; */
+    width: 45vw;
+    height: 65vh;
+    top: 15%;
+    left: 10%;
+    z-index: 1;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.top-page .text-content
+{
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    z-index: 10;
+    left: 40%;
+    top: 10%;
+}
+
+.top-page .text-content h1
+{
+    position: relative;
+    letter-spacing: 20px;
+    pointer-events: none;
+    font-size: 8rem;
+    color: wheat;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.top-page .text-content span
+{
+    position: relative;
+    left: 55%;
+    
+}
+
+.top-page .text-content .top
+{
+    display: block;
+    height: 4px;
+    width: 200px;
+    background-color: wheat;
+    margin-top: 20px;
+    margin-left: 70px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.top-page .text-content .bottom
+{
+    display: block;
+    height: 4px;
+    width: 200px;
+    background-color: wheat;
+    margin-top: 20px;
+    margin-left: 30px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.top-page .text-content article
+{
+        position: relative;
+        left: 45%;
+        letter-spacing: 4px;
+        top: 10%;
+        font-size: 2em;
+        color: wheat;
+        /* text-shadow: 2px 0 0 wheat, -2px 0 0 wheat, 0 2px 0 wheat, 0 -2px 0 wheat, 1px 1px wheat, -1px -1px 0 wheat, 1px -1px 0 wheat, -1px 1px 0 wheat; */
+}
+
+/* WHO CSS */
+.container .who
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 100px;
+}
+
+
+.container .who .content 
+{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.who .content .heading-num
+{
+    font-size: 2.5rem;
+    color: #ff4d5a;
+    position: relative;
+    padding-left: 6.2rem;
+    padding-right: 3.2rem;
+    font-family: "Abril Fatface";
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.who .content .heading-num::after
+{
+    content: "";
+    width: 4.8rem;
+    height: 2px;
+    background: #020b16;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+.who .text-wrap
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 10vw;
+}
+.who .text-wrap .heading
+{
+    font-size: 2.5rem;
+    color: #072142;
+    letter-spacing: 2px;
+    font-family: "futura_m";
+    margin-right: 15vw;
+    width: 30vw;
+}
+
+.who .text-wrap .text-content
+{
+    width: 40%;
+}
+
+.who .text-wrap .name
+{
+    margin-bottom: 5vh;
+    letter-spacing: 3px;
+}
+
+.who .text-wrap .introduce
+{
+    margin-bottom: 0vh ;
+    letter-spacing: 2px;
+
+}
+
+.who .text-wrap .avatar img
+{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 2vh;
+}
+
+/* PASSION CSS */
+.container .passion
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 20%;
+}
+
+
+.passion .content 
+{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.passion .content .heading-num
+{
+    font-size: 2.5rem;
+    color: #ff4d5a;
+    position: relative;
+    padding-left: 6.2rem;
+    padding-right: 3.2rem;
+    font-family: "Abril Fatface";
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.passion .content .heading-num::after
+{
+    content: "";
+    width: 4.8rem;
+    height: 2px;
+    background: #020b16;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+.passion .text-wrap
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 10vw;
+
+}
+
+.passion .text-wrap .heading
+{
+    font-size: 2.5rem;
+    color: #072142;
+    letter-spacing: 2px;
+    font-family: "futura_m";
+    margin-right: 15vw;
+    width: 30vw;
+}
+
+.passion .passion-content
+{
+   position: relative;
+    padding: 5% 10%;
+}
+
+.passion .passion-content ul
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.passion .passion-content li
+{
+    list-style: none;
+}
+
+.passion .passion-content .passion-item
+{
+    width: 29.75%;
+    align-items: center;
+    justify-content: center;
+}
+
+.passion .passion-content .passion-img
+{
+    width: 29.75%;
+    margin: 0 auto 0.2rem;
+}
+
+.passion .passion-content img
+{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.passion .passion-content .sub-title
+{
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+    color: #072142;
+    text-align: center;
+    letter-spacing: 0.2em;
+    line-height: 1.2;
+    font-family: "futura_de";
+    word-break: break-all;
+}
+
+.passion .passion-content p
+{
+    line-height: 2;
+    word-wrap: break-word;
+    white-space: normal;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+/* SKILL SET CSS */
+.container .skill-set
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+}
+
+
+.skill-set .content 
+{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.skill-set .content .heading-num
+{
+    font-size: 2.5rem;
+    color: #ff4d5a;
+    position: relative;
+    padding-left: 6.2rem;
+    padding-right: 3.2rem;
+    font-family: "Abril Fatface";
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.skill-set .content .heading-num::after
+{
+    content: "";
+    width: 4.8rem;
+    height: 2px;
+    background: #020b16;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+.skill-set .text-wrap
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 10vw;
+
+}
+
+.skill-set .text-wrap .heading
+{
+    font-size: 2.5rem;
+    color: #072142;
+    letter-spacing: 2px;
+    font-family: "futura_m";
+    margin-right: 15vw;
+    width: 30vw;
+}
+
+.skill-content
+{
+    position: relative;
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.skills
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8% 10%;
+}
+
+.skills .skill-icon
+{
+    width: 12%;
+    align-self: center;
+}
+
+.skills .skill-icon img 
+{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.skills .skill-detail
+{
+    width: 80%;
+}
+
+.skills .skill-detail .skill-meta
+{
+    margin-bottom: 0.8rem;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.skills .skill-detail .skill-meta .name
+{
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-align: end;
+    margin-right: 2%;
+}
+
+.small-title {
+    font-size: 1.4rem;
+    color: #072142;
+    letter-spacing: 0.2em;
+    line-height: 1;
+}
+
+.skills .skill-detail .skill-meta .year 
+{
+    font-size: 1rem;
+    line-height: 1;
+    color: #c0c5ca;
+    margin-left: 0.8rem;
+    letter-spacing: 0.2em;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.skills .skill-detail .skill-meta .amount
+{
+    color: #ff4d5a;
+}
+
+.skills .skill-detail .skill-meta .ratio
+{
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #072142;
+}
+/* 
+.skills .skill-detail .skill-bar
+{
+    width: 100%;
+    height: 0.9rem;
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 15px 0 rgb(7 33 66 / 15%);
+    box-shadow: 0 5px 15px 0 rgb(7 33 66 / 15%);
+}
+
+.skills .skill-detail .skill-bar::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    width: 10%;
+    
+}
+.skills .skill-detail .skill-bar.p90::after
+{
+    background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+}
+
+.skills .skill-detail .skill-bar.p90.in::after
+{
+    animation: ratio90 1.5s forwards;
+}
+
+.skills .skill-detail .skill-bar.p80::after
+{
+    background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+}
+
+.skills .skill-detail .skill-bar.p80.in::after
+{
+    animation: ratio80 1.5s forwards;
+}
+
+.skills .skill-detail .skill-bar.p70::after
+{
+    background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+}
+
+.skills .skill-detail .skill-bar.p70.in::after
+{
+    animation: ratio70 1.5s forwards;
+}
+
+.skills .skill-detail .skill-bar.p60::after
+{
+    background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+}
+
+.skills .skill-detail .skill-bar.p60.in::after
+{
+    animation: ratio60 1.5s forwards;
+}
+
+@keyframes ratio90 {
+    0%{
+        width: 15%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes ratio80 {
+    0%{
+        width: 15%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes ratio70 {
+    0%{
+        width: 15%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes ratio60 {
+    0%{
+        width: 15%;
+    }
+    100%{
+        width: 60%;
+    }
+} */
+
+
+.footer
+{
+    width: 100%;
+    text-align: center;
+    background-image: -webkit-linear-gradient(
+349deg
+, #072142, #8c2b7a 52%, #ff4d5a);
+    background-image: -o-linear-gradient(349deg, #072142, #8c2b7a 52%, #ff4d5a);
+    background-image: linear-gradient(
+101deg
+, #072142, #8c2b7a 52%, #ff4d5a);
+    position: relative;
+    z-index: 100;
+    height: 30vh;
+}
+
+.footer a{
+    color: white;
+    display: block;
+    position: relative;
+    top: 50%;
+    letter-spacing: 0.2rem;
+}
+
+
+

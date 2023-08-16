@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: 'futura';
+    src: url(../font/Futura_Medium/Futura_Medium.otf)
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'futura';
+    height: auto;
+ }
+
+
+/* .container .img-flex
+{
+    position: fixed;
+} */
+
+.max-width
+{
+    max-width: 1300px;
+    padding: 0 80px;
+}
+
+.container
+{
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden ;
+    scroll-behavior: smooth;
+    z-index: 999;
+}
+
+.container .back-btn
+{
+    position: fixed;
+    left: 3%;
+    top: 10%;
+    z-index: 10000;
+}
+.container .back-btn a
+{
+    color: #0F2027;
+    font-size: 40px;
+}
+
+.container .top-page
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .top-page .img-top 
+{
+    background-image: url(../img/project.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    /* left: 0;
+    top: 0; */
+    /* width: 60%;
+    height: 50%; */
+    width: 45vw; 
+    height: 65vh;
+    top: 15%;
+    left: 50%;
+    z-index: 1;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.top-page .text-content
+{
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    z-index: 10;
+    left: 10%;
+    top: 10%;
+}
+
+.top-page .text-content h1
+{
+    position: relative;
+    letter-spacing: 20px;
+    pointer-events: none;
+    font-size: 8rem;
+    color: wheat;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.top-page .text-content span
+{
+    position: relative;
+    left: 0%;
+    
+}
+
+.top-page .text-content .top
+{
+    display: block;
+    height: 4px;
+    width: 200px;
+    background-color: wheat;
+    margin-top: 20px;
+    margin-left: 30px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.top-page .text-content .bottom
+{
+    display: block;
+    height: 4px;
+    width: 200px;
+    background-color: wheat;
+    margin-top: 20px;
+    margin-left: 70px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.top-page .text-content article
+{
+        position: relative;
+        left: 5%;
+        letter-spacing: 4px;
+        top: 10%;
+        font-size: 2em;
+        color: wheat;
+        /* text-shadow: 2px 0 0 wheat, -2px 0 0 wheat, 0 2px 0 wheat, 0 -2px 0 wheat, 1px 1px wheat, -1px -1px 0 wheat, 1px -1px 0 wheat, -1px 1px 0 wheat; */
+}
+
+
+/* project CSS */
+.container .project
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+.project .content 
+{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.project .content .heading-num
+{
+    font-size: 2.5rem;
+    color: #ff4d5a;
+    position: relative;
+    padding-left: 6.2rem;
+    padding-right: 3.2rem;
+    font-family: "Abril Fatface";
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.project .content .heading-num::after
+{
+    content: "";
+    width: 4.8rem;
+    height: 2px;
+    background: #020b16;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+.project .text-wrap
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 10vw;
+
+}
+
+.project .text-wrap .heading
+{
+    font-size: 2.5rem;
+    color: #072142;
+    letter-spacing: 2px;
+    font-family: "futura_m";
+    margin-right: 15vw;
+    width: 30vw;
+}
+
+.project .project-container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5vh;
+    padding: 3vw;
+}
+
+.project .project-card
+{
+    position: relative;
+    height: 40vh;
+}
+
+.project .project-img
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.project-card .card-content
+{
+    position: relative;
+    padding: 1vw;
+    color: black;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.project .card-content .title
+{
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    text-align: center;
+}
+
+.project .card-content .info
+{
+    margin: 1vw;
+    font-size: 1.5rem;
+    line-height: 5vh;
+    text-align: left;
+}
+
+.project-card .project-btn-grp
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2vw;
+    margin-top: 5%;
+}
+
+.project-btn
+{
+    height: 5vh;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    border: none;
+    background: #000;
+    color: wheat;
+    cursor: pointer;
+}
+
+.project-btn.live-btn
+{
+    background: none;
+    border: 2px solid black;
+}
+
+.project .project-card:hover img
+{
+    filter: blur(15px);
+}
+
+.project .project-card:hover .card-content{
+    opacity: 1;
+}
+
+
+
+/* FOOTER */
+
+.footer
+{
+    width: 100%;
+    text-align: center;
+    background-image: -webkit-linear-gradient(
+349deg
+, #072142, #8c2b7a 52%, #ff4d5a);
+    background-image: -o-linear-gradient(349deg, #072142, #8c2b7a 52%, #ff4d5a);
+    background-image: linear-gradient(
+101deg
+, #072142, #8c2b7a 52%, #ff4d5a);
+    position: relative;
+    z-index: 100;
+    height: 30vh;
+}
+
+.footer a{
+    color: white;
+    display: block;
+    position: relative;
+    top: 50%;
+    letter-spacing: 0.2rem;
+}
+
+
+

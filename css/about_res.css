@@ -1,0 +1,268 @@
+   @media (max-width: 1250px){
+    .top-page .text-content h1{
+        font-size: 6rem;
+    }
+    .top-page .text-content article{
+        left: 40%;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 980px){
+    .navigation .social-icon{
+        display: flex;
+        justify-content: flex-start;
+        width: 60%;
+        list-style: none;
+        align-items: center;
+        margin-left: 60%;
+      }
+
+    .top-page .text-content h1{
+        font-size: 5rem;
+        letter-spacing: 1rem;
+    }
+    .top-page .text-content span{
+        left: 45%;
+    }
+    .top-page .text-content article{
+        letter-spacing: 0.2rem;
+        font-size: 1.2em;
+    }
+    .who .text-wrap .heading{
+        margin-right: 0;
+    }
+    .who .text-wrap .text-content{
+        width: 60%;
+    }
+    .skill-content{
+        padding: 5% 2%;
+    }
+    .skills{
+        padding: 6% 10%;
+    }
+    .skills .skill-detail{
+        width: 85%;
+    }
+    .skills .skill-detail .skill-meta{
+        margin-bottom: 0.4rem;
+    }
+    .small-title{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .navigation .social-icon{
+        display: flex;
+        justify-content: flex-start;
+        width: 60%;
+        list-style: none;
+        align-items: center;
+        margin-left: 20%;
+      }
+    .top-page .text-content h1{
+        font-size: 5rem;
+        letter-spacing: 1rem;
+    }
+    .top-page .text-content{
+        left: 35%;
+    }
+    .top-page .text-content span{
+        left: 35%;
+    }
+    .top-page .text-content .top{
+        width: 100px;
+    }
+    .top-page .text-content .bottom{
+        width: 100px;
+    }
+    .top-page .text-content article{
+        left: 20%;
+    }
+    .who .text-wrap{
+        flex-direction: column;
+    }
+    .who .text-wrap .heading{
+        width: 50vw;
+    }
+    .who .text-wrap .text-content{
+        width: 100%;
+        margin-left:-25% ;
+        margin-top: 10%;
+    }
+    .passion .passion-content .passion-item{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .skill-set .text-wrap .heading{
+        width: 50vw;
+    }
+    .skill-content{
+        grid-template-columns: 100%;
+    }
+    .skill-content{
+        padding: 5% 5%;
+    }
+    .skills{
+        padding: 6% 10%;
+    }
+    .skills .skill-detail{
+        width: 85%;
+    }
+    .skills .skill-detail .skill-meta{
+        margin-bottom: 0.8rem;
+    }
+    .small-title{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 440px ){
+    .navigation .social-icon{
+        opacity: 0;
+        pointer-events: none;
+    }
+    .navigation-open .social-icon{
+        opacity: 1;
+        pointer-events: all;
+        transition: all 1s linear;
+    }
+    .max-width .name{
+        font-size: 1rem;
+    }
+    .navigation__icon{
+        right: 30px;
+    }
+    .container .top-page .img-top{
+        width: 100%;
+        height: 60%;
+    }
+    .top-page .text-content{
+        left: 10%;
+        top: 60%;
+        width: 100%;
+        height: 50%;
+    }
+    .top-page .text-content h1{
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+    }
+    .top-page .text-content span{
+        left: 0;
+    }
+    .top-page .text-content .top{
+        margin-left: 0;
+    }
+    .top-page .text-content article{
+        left: 0;
+    }
+    .who .text-wrap .heading{
+        font-size: 2rem;
+    }
+    .who .content .heading-num{
+        padding-left: 4.2rem;
+        padding-right: 1rem;
+        font-size: 2rem;
+    }
+    .who .content .heading-num::after{
+        width: 3rem;
+    }
+    .who .text-wrap .text-content{
+        width: 300px;
+    }
+    .who .text-wrap .introduce{
+        line-height: 2rem;
+        text-align: justify
+    }
+
+    .passion .text-wrap .heading{
+        font-size: 2rem;
+    }
+
+    .passion .content .heading-num{
+        padding-left: 4.2rem;
+        padding-right: 1rem;
+        font-size: 2rem;
+    }
+    .passion .content .heading-num::after{
+        width: 3rem;
+    }
+
+    .skill-set .text-wrap .heading{
+        font-size: 2rem;
+        width: 60vw;
+    }
+
+    .skill-set .content .heading-num{
+        padding-left: 4.2rem;
+        padding-right: 1rem;
+        font-size: 2rem;
+    }
+    .skill-set .content .heading-num::after{
+        width: 3rem;
+    }
+
+    .skills{
+        padding: 6% 6%;
+    }
+    .skills .skill-detail{
+        width: 85%;
+    }
+    .skills .skill-detail .skill-meta{
+        margin-bottom: 0.4rem;
+    }
+    .small-title{
+        font-size: 1rem;
+    }
+    .skills .skill-detail .skill-meta .year{
+        font-size: 0.6rem;
+    }
+    .skills .skill-detail .skill-bar{
+        height: 0.6rem;
+    }
+    .navigation-open .navigation__ul{
+        width: 100%;
+    }
+    .navigation .navigation__ul a{
+        font-size: 2rem;
+    }
+
+    .navigation .social-icon{
+        position: relative;
+        margin-left: 0;
+        top: 80vh;
+        left: -15vw;
+        /* left: 30%;
+        transform: translateX(-50%); */
+    }
+
+    .navigation .navigation__icon
+    {
+        right: -10px;
+    }
+    .navigation .name{
+        margin-left: 20px;
+        width: 200px;
+    }
+    
+}
+
+@media (max-width: 360px){
+    .navigation .navigation__icon
+    {
+        right: -10px;
+    }
+    .navigation .social-icon{
+        position: absolute;
+        top: 80vh;
+        right: 55vw;
+        transform: translateX(50%)
+    }
+    .container .passion{
+        margin-top: 30%;
+    }
+    .passion .passion-content .sub-title{
+        font-size: 1.8rem;
+    }
+}

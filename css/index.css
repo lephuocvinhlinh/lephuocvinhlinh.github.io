@@ -1,0 +1,949 @@
+@font-face{
+    font-family: 'futura';
+    src: url(../font/Futura_Medium/Futura_Medium.otf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html
+{
+    font-size: 16px;
+    font-family: 'futura';
+}
+body {
+    overflow: hidden;
+    font-family: 'futura';
+ }
+
+.container
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* position: relative; */
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* .container .img-flex
+{
+    position: fixed;
+} */
+
+.max-width
+{
+    max-width: 1300px;
+    padding: 0 80px;
+}
+
+/* NAV FULL PAGE */
+.nav-fp
+{
+    position: fixed;
+    z-index: 999;
+    height: 30vh;
+    width: 40px;
+    left: 2%;
+    top: 50%;
+    overflow: hidden;
+    transform: translate3d(0, -50%, 0);
+}
+
+.nav-fp ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-fp ul li
+{
+    height: 3px;
+    margin: 0 0 40px;
+    display: block;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-fp ul li a
+{
+    width: 24px;
+    height: 4px;
+    background: #fff;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+    display: block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.nav-fp ul li .active
+{
+    width: 40px;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+}
+
+
+
+/* SECTION */
+
+/* .container .main
+{
+    scroll-snap-align: start;
+} */
+
+.scroll-section
+{
+    scroll-behavior: smooth;
+    transition: all 2s ease-in;
+    position: relative;
+    width: 80vw;
+    height: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* HOME CSS */
+
+#home
+{
+    display: flex;
+    background: transparent;
+    color: black;
+    min-height: 500px;  
+}
+
+#home .home-img
+{
+    position: absolute;
+    top: 7vh;
+}
+#home .home-img .background{
+    position: absolute;
+    top: 0%;
+    width: 40%;
+}
+#home .home-img img
+{  
+    position: absolute;
+    width: 45%;
+    
+    z-index: 0;
+}
+#home .home-img .cloud
+{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    opacity: 1;
+    z-index: -1;
+}
+
+#home .home-img .cloud2
+{
+    position: absolute;
+    left: -20%;
+    top: 110%;
+    opacity: 1;
+    z-index: 1;
+}
+
+#home .home-img .cloud3
+{
+    position: relative;
+    top: 80%;
+    left: -20%;
+    opacity: 1;
+    z-index: -1;
+    width: 50%;
+}
+
+
+#home .max-width
+{
+    margin: auto 40px auto 0px;
+}
+#home .home-content
+{
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    z-index: 200;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+#home .home-content .text1
+{
+    font-size: 2rem;
+    color: wheat;
+}
+
+#home .home-content .text2
+{
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-right: -3px;
+    color: wheat;
+}
+
+#home .home-content .text3
+{
+    font-size: 2.5rem;
+    margin: 5px 0;
+    color: wheat;
+}
+
+
+#home .home-content .text3 span
+{
+    color: #01B9CC;
+}
+
+
+
+#home .home-content a
+{
+    position: relative;
+    margin-top: 50px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+
+
+#home .home-content a:hover
+{
+    background-color: wheat;
+    text-shadow: #01B9CC;
+}
+#home .scroll-noti 
+{
+    position: fixed;
+    left: -10%;
+    bottom: 0;
+    z-index: 100;
+    height: 25vh;
+    overflow: hidden;
+}
+#home .scroll-noti p
+{
+   
+    font-size: 0.8rem;
+    line-height: 1;
+    letter-spacing: 0.3em;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    color: #fff;
+   
+}
+
+#home .scroll-noti p::after {
+    content: "";
+    width: 2px;
+    height: 64px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* contact */
+
+#contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+
+}
+
+#contact .card
+{
+    position: relative;
+    z-index: 9999;
+    left: 20%;
+    width: 45vw;
+    height: 65vh;
+    background-image: url(../img/contact.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+    pointer-events: none;
+}
+
+#contact .card .text-content
+{
+    position: absolute;
+    
+    left: -30vw;
+    z-index: 999;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#contact .card .text-content h1
+{   
+    
+    font-size: 8rem;
+    color: wheat;
+    letter-spacing: 2rem;
+    
+}
+
+#contact .card:hover .text-content h1
+{
+    transform: translateX(-200vw)!important;
+    transition: all 4s cubic-bezier(0.2, 0.01, 0, 1)!important;
+}
+
+#contact .page-num
+{
+    position: absolute;
+    pointer-events: none;
+    left: 85%;
+    top: 70%;
+    z-index: 99999;
+    overflow: hidden;
+}
+
+#contact .page-num p
+{
+    font-size: 8rem;
+    font-weight: 1000;
+    color: wheat;
+    transition: all 3s cubic-bezier(0.43, 0.01, 0, 1)!important;
+}
+
+#contact .card:hover .page-num p
+{
+    transform: translateY(150vh)!important;
+}
+
+#contact .card .text-content .top
+{
+    display: block;
+    height: 0.3rem;
+    width: 15vw;
+    margin-top: 5%;
+    background-color: wheat;
+    border-radius: 2px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+#contact .card .text-content .bottom
+{
+    display: block;
+    height: 0.3rem;
+    width: 15vw;
+    background-color: wheat;
+    border-radius: 2px;
+    margin-top: 3%;
+    margin-left: 10%;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#contact .card:hover .text-content .top
+{
+    transform: translateX(-100vw)!important;
+}
+
+#contact .card:hover .text-content .bottom
+{
+    transform: translateX(-100vw)!important;
+}
+
+#contact .btn-contact
+{
+    position: absolute;
+    overflow: hidden;
+    left: 10%;
+    top: 70%;
+    z-index: 99999;
+}
+
+
+#contact .card:hover + .btn-contact .gift
+{
+    transform: translateY(100vh)!important;
+}
+
+
+
+#contact .card:hover
+{
+    transform: translateX(15%)!important;
+}
+#contact .card:hover .img-box
+{
+    transform: rotateY(-180deg);
+}
+#contact .card .img-box
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    background: #000;
+    transition: 1s;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+
+}
+
+#contact .card .img-box img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+#contact .card .img-box img:nth-child(2)
+{
+    transform: rotateY(-180deg);
+    pointer-events: none;
+    height: 100%;
+}
+#contact .card .details
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#contact .card .details .content 
+{
+    display: flex;
+    position: absolute;
+    top:0%;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* pointer-events: none; */
+}
+
+#contact .card .details .content ul
+{
+    list-style: none;
+    width: 80%;
+    height: 70%;
+    position: relative;
+    left: -10%;
+    top: 5%;
+    opacity: 0.9;
+}
+
+#contact .card .details .content ul li
+{
+    padding: 5%;
+}
+
+#contact .card .details .content ul a
+{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+}
+
+#contact .card .details .content ul a:hover
+{
+    color: wheat;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+
+#contact .card .details .content ul a i
+{
+    padding-right: 2%;
+}
+
+#contact .card .details .content  .social-icon
+{
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+}
+
+.image-over
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-cover
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgb(177, 177, 177);
+    
+}
+.image-cover:last-child
+{
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* project CSS */
+#project
+{
+    position: relative;
+    min-height: 500px;
+}
+
+#project .open-project
+{
+    position: relative;
+    left: 50%;
+    top: 15%;
+    width: 45vw;
+    height: 65vh;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+    background: url(../img/project.jpg);
+    background-size: cover;
+    background-position: 0vw;
+}
+
+#project .open-project img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+#project .text-content
+{
+    position: relative;
+    width: 110%;
+    height: 65%;
+    top: -50%;
+    overflow: hidden;
+}
+
+#project .text-content h1
+{
+    /* text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; */
+    position: relative;  
+    letter-spacing: 2.2rem;
+    pointer-events: none;
+    font-size: 8rem;
+    /* font-weight: 1000; */
+    color: wheat;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#project .page-num
+{
+    position: absolute;
+    pointer-events: none;
+    top: 60%;
+    left: 90%;
+    overflow: hidden;
+}
+#project .page-num p
+{ 
+    top: 3rem;
+    font-size: 8rem;
+    font-weight: 1000;
+    color: wheat;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#project .text-content span
+{
+    position: relative;
+    top: 10%;
+}
+
+#project  .text-content .top
+{
+    display: block;
+    height: 0.3rem;
+    width: 15vw;
+    margin-top: 1%;
+    background-color: wheat;
+    border-radius: 2px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+#project  .text-content .bottom
+{
+    display: block;
+    height: 0.3rem;
+    width: 15vw;
+    background-color: wheat;
+    margin-top: 2%;
+    margin-left: 5%;
+    border-radius: 2px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#project  .text-content article
+{
+    position: relative;
+    letter-spacing: 0.25rem;
+    top: 20%;
+    font-size: 2em;
+    color: wheat
+}
+
+#project .btn
+{
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    overflow: hidden;
+    z-index: 99999;
+}
+#project .btn .show-more
+{
+    display: inline-block;
+    width: 15vw;
+    font-size: 1.2rem;
+    color: wheat;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-color: rgb(50, 48, 66);
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#project .btn .show-more:hover{
+    background-color: white;
+    color: rgb(50, 48, 66);;
+}
+
+/* ABOUT CSS */
+#about
+{
+    position: relative;
+    min-height: 500px;
+}
+
+#about .about-bg
+{
+    position: relative;
+    top: 15%;
+    width: 45vw;
+    height: 65vh;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+    background: url(../img/linhlpv_about.jpg);
+    background-size: cover;
+    background-position: center;
+    /* top: 0;
+    width: 60vw;
+    height: 100%;
+    left: -13%; */
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+#about .about-bg img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+#about .text-content
+{
+    position: relative;
+    top: -50%;
+    overflow: hidden;
+    height: 100%;
+}
+
+#about .text-content h1
+{
+    right: -35%;
+    position: relative;
+    letter-spacing: 1rem;
+    pointer-events: none;
+    font-size: 8rem;
+    color: wheat;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#about .text-content span
+{
+    position: relative;
+    left: 70%;
+    top: 5%;
+    
+}
+
+#about .text-content .top
+{
+    display: block;
+    height: 0.3rem;
+    width: 15vw;
+    margin-top: 1%;
+    margin-left: 5%;
+    background-color: wheat;
+    border-radius: 2px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#about .text-content .bottom
+{
+    display: block;
+    height: 0.3rem;
+    width: 15vw;
+    background-color: wheat;
+    margin-top: 2%;
+    border-radius: 2px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#about .text-content article
+{
+        position: relative;
+        left: 65%;
+        letter-spacing: 0.25rem;
+        top: 10%;
+        font-size: 2em;
+        color: wheat;
+        /* text-shadow: 2px 0 0 wheat, -2px 0 0 wheat, 0 2px 0 wheat, 0 -2px 0 wheat, 1px 1px wheat, -1px -1px 0 wheat, 1px -1px 0 wheat, -1px 1px 0 wheat; */
+}
+#about .btn
+{
+    position: absolute;
+    left: 70%;
+    top: 70%;
+    z-index: 99999;
+    overflow: hidden;
+}
+#about .show-more
+{
+    display: inline-block;
+    width: 15vw;
+    color: wheat;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-color: rgb(50, 48, 66);
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.2rem;
+}
+
+#about .show-more:hover{
+    background-color: white;
+    color: rgb(50, 48, 66);;
+}
+
+
+#about .page-num
+{
+    position: absolute;
+    pointer-events: none;
+    left: -5%;
+    top: 67%;
+    z-index: 99999;
+    overflow: hidden;
+}
+#about .page-num p
+{
+    font-size: 8rem;
+    font-weight: 1000;
+    color: wheat;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* contact CSS */
+/* #contact
+{
+    position: relative;
+    min-height: 500px;
+}
+
+#contact .contact-bg
+{
+    position: relative;
+    left: 50%;
+    top: 15%;
+    width: 45vw;
+    height: 65vh;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+    background: url(../img/contact.png);
+    background-size: cover;
+    background-position: right ;
+}
+
+#contact .contact-bg img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+#contact .text-content
+{
+    position: relative;
+    height: 70%;
+    left: -5%;
+    top: -40%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#contact .text-content h1
+{
+    position: relative;
+    letter-spacing: 0.6rem;
+    pointer-events: none;
+    font-size: 8rem;
+    color: wheat;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#contact .text-content span
+{
+    position: relative;
+    top: 10%;
+    left: 5%;
+}
+
+#contact .text-content .top
+{
+    display: block;
+    height: 0.3rem;
+    width: 15vw;
+    background-color: wheat;
+    margin-top: 1%;
+    border-radius: 2px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#contact .text-content .bottom
+{
+    display: block;
+    height: 0.3rem;
+    width: 15vw;
+    background-color: wheat;
+    margin-top: 2%;
+    margin-left: 5%;
+    border-radius: 2px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#contact .page-num
+{
+    position: absolute;
+    pointer-events: none;
+    left: 95%;
+    top: 60%;
+    overflow: hidden;
+}
+
+#contact .page-num p
+{
+    font-size: 8rem;
+    font-weight: 1000;
+    color: wheat;
+}
+
+#contact .social-contact
+{
+    position: relative;
+    top: -75%;
+    height: 20%;
+    z-index: 2;
+    overflow: hidden;
+}
+#contact .social-contact a
+{
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    color: black;
+    z-index: 2;
+}
+
+#contact .social-contact a:hover{
+    color: wheat;
+}
+#contact .social-contact a:not(:first-child)
+{
+    top: 2rem;
+    padding: 1rem;
+} */
+
+
+
